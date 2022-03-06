@@ -40,7 +40,13 @@ Figure 1 and 2 below shows the results of the oversampling methods, the naive ra
 
 Figure 1. 
 
+<img width="529" alt="1" src="https://user-images.githubusercontent.com/92636438/156947144-8f28c55e-b2f3-4e8c-88d0-a0178772f3e3.png">
+
 Figure 2. 
+
+<img width="529" alt="2" src="https://user-images.githubusercontent.com/92636438/156947163-8e3013cf-fbb9-4bcc-8cb7-86fc82f74b2b.png">
+
+
 
 From Figure 1, Random Oversampling, the following observations and deductions can be made:
 
@@ -54,27 +60,34 @@ Figure 3 below displays the results from the SMOTEENN algorithm. The model perfo
 
 Figure 3.
 
+<img width="529" alt="3" src="https://user-images.githubusercontent.com/92636438/156947182-3d41c332-a27d-412d-a575-d2012adc1f3e.png">
 
-Figure 4 below displays the results from the Cluster Centroids undersampling algorithm. As can be observed from the counter the number of target variables decreased after fitting the model. The following deductions can be made:
 
-Figure 4.
+Figure 4 below displays the results from the Cluster Centroids undersampling algorithm. As can be observed from the counter, the number of target variables decreased after fitting the model. The following deductions can be made:
 
 * This model is not good at classifying loan status because the model's accuracy, 0.516 is low.
 * For high-risk class, the model has a moderate recall (0.63) but extremely low precision(0.01) indicating that most of its predicted labels are incorrect when compared to the training labels. 
 * In contrast, for the low-risk class, the high precision (1.00) but low recall (0.43) results indicates the model returned very few results, but most of its predicted labels are correct when compared to the training labels. 
 
+Figure 4
+
+<img width="528" alt="4" src="https://user-images.githubusercontent.com/92636438/156947219-bbeb54c8-607c-48bc-989f-9495a0f710fd.png">
+
+
 Figure 5 and 6 below display the results from the Balanced Random Forest Classifier (BRFC) and Easy Ensemble AdaBoost classifier (EEAC), respectively. Upon observation and comparison, the following deductions can be made:
-
-Figure 5. 
-
-
-Figure 6.
-
-
 
 * Both ensemble learners are good at predicitng loan status with accuracy scores of 0.788 and 0.925 for the BRFC and EEAC, respectively. Of course, with an accuracy score of 0.925 the EEAC is better and it is very good.
 * For both models, the precision is extremely low for high-risk class but very good for the low risk class, as observed in the other models above.
 * The recall is very good for both classes (high-risk and low-risk) for the EEAC model which indicates a low number of false negatives.
+
+Figure 5. 
+
+<img width="323" alt="5" src="https://user-images.githubusercontent.com/92636438/156947240-19beff6e-41c2-464e-996e-aa79f8211678.png">
+
+Figure 6.
+
+<img width="320" alt="6" src="https://user-images.githubusercontent.com/92636438/156947245-4d44435a-110a-4939-ac74-1804341b9177.png">
+
 
 ## Summary
 
